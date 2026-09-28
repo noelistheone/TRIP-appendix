@@ -205,7 +205,7 @@ Cosine between the recovered rows and the true coordinate sign patterns, $\mathr
 | C1+C2+C3a | 20 | 0.98 | 0.99 | 0.98 | 0.98 | 0.85 | 0.97 |
 | C1+C2+C3a | 21 | 1.00 | 1.00 | 1.00 | 0.99 | 0.32 | 0.80 |
 
-On the four small datasets, probes-only training (C3a) changes the cosine by at most 0.004 and the recovered directions match the sign patterns with cosine 0.98–1.00. On Amazon-Book, C3a is not harmless: at $W=21$ the cosine falls from 0.65 to 0.24, and on Douban-Book from 0.34 to 0.28. Adding one offset unknown per pair to the solve changes these results by at most 0.02.
+On the four small datasets, training using only probes (C3a) alters the cosine similarity by no more than 0.004, with recovered directions aligning in sign with cosine 0.98–1.00. On Amazon-Book, C3a is not benign: at $W=21$ the cosine decreases from 0.65 to 0.24, while on Douban-Book it drops from 0.34 to 0.28. Introducing a single offset unknown per pair during solving shifts these outcomes by at most 0.02.
 
 ### B.6 NCF without C3c (MLP scaling), $W=21$
 
